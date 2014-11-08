@@ -14,10 +14,9 @@ springTx
   6. 怀疑的点有：Spring的事务管理没起作用。
 
 
-=========
+========
 此项目模拟:
-	1. 用跟系统A相同的Spring事务管理机制。
-	2. 有两个表springTx1和springTx2， 建表语句分别：
-		CREATE TABLE `springTx1` (	`id` INT NULL) COLLATE='utf8_general_ci' ENGINE=InnoDB;
-		CREATE TABLE `springTx2` (	`id` INT NULL) COLLATE='utf8_general_ci' ENGINE=InnoDB;
-
+　1. 用跟系统A相同的Spring事务管理机制。
+　2. 有两个表springTx1和springTx2， 建表语句分别：
+　　　CREATE TABLE `springTx1` (`id` INT NULL) COLLATE='utf8_general_ci' ENGINE=InnoDB;
+　　　CREATE TABLE `springTx2` (`id` INT NULL) COLLATE='utf8_general_ci' ENGINE=InnoDB;
