@@ -12,3 +12,12 @@ springTx
   4. B从MySQL读数据时偶尔会有这样的问题：成功读到PrimaryTable表的记录，如row1和row2， 其主键值依次为p1和p2, 用p1和p2去PropertyTable表里读相关属性时， p1能找到数据，p2找不到数据。
   5. 系统A中的事务是用Spring管理，MySQL用InnoDb，事务隔离级别是REPEATABLEREAD。
   6. 怀疑的点有：Spring的事务管理没起作用。
+
+
+=========
+此项目模拟:
+	1. 用跟系统A相同的Spring事务管理机制。
+	2. 有两个表springTx1和springTx2， 建表语句分别：
+		CREATE TABLE `springTx1` (	`id` INT NULL) COLLATE='utf8_general_ci' ENGINE=InnoDB;
+		CREATE TABLE `springTx2` (	`id` INT NULL) COLLATE='utf8_general_ci' ENGINE=InnoDB;
+
